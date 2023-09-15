@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Todo</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Todo List App</h1>
+
+    <div id="container">
+      <div id="input-container">
+        <img id="list-logo" src="list.png" />
+        <input
+          placeholder="Add a task"
+          class="add-task"
+          id="add"
+          data-helloWord="asdasdas"
+        />
+      </div>
+
+      <div id="task-counter-container">
+        <span class="task-counter" id="total-tasks"
+          >Total tasks: <span id="tasks-counter">0</span></span
+        >
+
+        <span class="task-counter" id="completed-tasks"
+          >Completed tasks: <span id="complete-tasks-counter">0</span></span
+        >
+        <span class="task-counter" id="uncomplete-tasks"
+          >Uncomplete tasks: <span id="uncomplete-tasks-counter">0</span></span
+        >
+      </div>
+      <ul id="list">
+        <!-- <li>
+          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+          <label for="task1">Buy groceries</label>
+          <img src="bin.svg" class="delete" data-id="12" />
+        </li> -->
+      </ul>
+    </div>
+    <script src="ToDoModule.js"></script>
+    <script>
+      //console.log(ToDo);
+      ToDo.initializeToDo();
+    </script>
+  </body>
+</html>
